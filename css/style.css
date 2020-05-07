@@ -1,20 +1,23 @@
 body {
     margin: 0;
-    background-image: url(background.jpg); background-size: 100%; background-repeat: no-repeat;
+    background-image: url(../images/background.jpg); background-size: 100%; background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
     color: #4A4D4F;
 }
 
 .container {
-    width: 30%;
-    margin: 0 35%;
-    background-color: #ebbfae;
-    border-radius: 10px;
-    box-shadow: 10px 10px 7px lightgrey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .notepad {
-    margin-top: 100px;
+    width: 40%;
+    background-color: #ebbfae;
+    border-radius: 10px;
+    box-shadow: 10px 10px 7px lightgrey;
+    margin-top: 50px;
     padding: 40px;
 }
 
@@ -37,14 +40,12 @@ p {margin-top: 0px;}
     margin-bottom: 20px;
 }
 
-#trashCan {
-    width: 20px;
-    height: 20px;
-    background-image: url(trash-delete-icon.png); background-size: 100%; background-repeat: no-repeat;
+i {
+    font-size: 22px;
 }
 
-#trashCan:hover {
-    background-image: url(trash-delete-icon-hover.png); background-size: 100%; background-repeat: no-repeat;
+i:hover {
+    color: #FFF;
     transition: 0.3s;
 }
 
